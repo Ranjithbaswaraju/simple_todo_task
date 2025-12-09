@@ -3,7 +3,7 @@ const uri="mongodb+srv://ranjithbaswaraju10_db_user:8RORkTMzLw1dQ4g9@sampletodo.
 
 async function connectDB() {
   try {
-    await mongoose.connect(url, {
+    await mongoose.connect(uri, {
       dbName: "MVC_Todo",
     });
     console.log("Database Connected");
