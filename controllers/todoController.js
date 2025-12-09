@@ -1,6 +1,7 @@
 const { todoModel } = require("../models/todoSchema.js");
 const addTodos = async (req, res) => {
   try {
+    console.log()
     const data = new todoModel({
       title: req.body.title,
       designation: req.body.designation,
@@ -74,6 +75,7 @@ const getTodos = async (req, res) => {
   const id = req.params.id;
 
   try {
+    
     const data = await todoModel.find();
     res.status(200).json({
       message: "Total Data ",
