@@ -12,7 +12,7 @@ app.use(express.urlencoded());
 //cors middleware
 
 app.use(cors({
-    origin:["https://todos-cors.vercel.app/","http://localhost:5173"]
+    origin:["https://todos-cors.vercel.app","http://localhost:5173"]
 }))
 
 
