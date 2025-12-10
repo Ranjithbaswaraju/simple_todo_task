@@ -3,6 +3,9 @@ const app = express();
 const allData = require("./routes/todoRoutes.js");
 const { connectDB } = require("./db_configure/db.js");
 const cors=require('cors')
+const dotenv=require('dotenv')
+dotenv.config();
+// console.log(process.env.monoDb_url)
 
 connectDB();
 app.use(express.json());
